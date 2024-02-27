@@ -1,0 +1,23 @@
+﻿<Window x:Class="l3.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:l3"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <Grid>
+            <DataGrid Name="DataGridContext" AutoGenerateColumns="false">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="Название продукта" Binding="{Binding NameProduct}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Тип продукта" Binding="{Binding TypeProductNavigation.TypeName}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Стоимость" Binding="{Binding Price}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Артикль" Binding="{Binding Article}"></DataGridTextColumn>
+                    <DataGridTextColumn Header="Материалы" Binding="{Binding MaterialList}"></DataGridTextColumn>
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+
+    </Grid>
+</Window>
